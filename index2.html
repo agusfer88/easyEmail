@@ -5,7 +5,40 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Easy Email</title>
  
-    <style>
+    <style >
+            /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      
+      /*All the styling goes here*/
+      
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; 
+      }
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; 
+      }
+      table {
+       
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; 
+      }
+
       table.main{
         border-style: none;
         border-collapse: collapse;
@@ -77,6 +110,33 @@
   .container{
       width: 70%;
     }
+
+    @media screen and (max-device-width:600px), screen and (max-width:600px) {
+      .hide {
+        display: none !important;
+        width: 0px!important;
+        height: 0px!important;
+      }      
+      .show {
+        display: unset !important;
+      
+      }
+
+      .tit-2{
+        font-size: 19px;
+        padding: 0px;
+        padding-inline-start: 0em;
+      }
+      .text{
+        font-size: 13px;
+        padding: 6px;
+        padding-inline-start: 2em;
+      }
+     .text-small{
+      text-align: end;
+      font-size: 10px;      
+       }
+    }
     </style>
 
   </head>
@@ -84,7 +144,7 @@
 <table class="container" align="center">
     <tr>
         <td>
-    <table role=""  class="main"  cellspacing="2" cellpadding="2" border="1">
+    <table  class="main"  cellspacing="2" cellpadding="2" border="1">
       <tr>
         <td  colspan="12" class="tit-1 header">South Col Experience</td>
       </tr>
@@ -113,17 +173,43 @@
       <tr>
         <td colspan="12">&nbsp;</td>
       </tr>
-      <tr>
+      <tr class="hide" >
         <td colspan="6"  align="center"><img width="100%" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mtn-2.png" alt="Mountains" /></td>
         <td colspan="6"  align="center"><img width="100%" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/bass.png" alt="Stretch is the new badass" /></td>
       </tr>
-      <tr>
+      <tr class="hide" >
         <td colspan="6" class="tit-2">Photo of the week</td>    
         <td colspan="6"  style="text-align: right;" class="text-small">ADVERTISMENT</td>
       </tr>
-      <tr>
-        <td colspan="12" class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+      <tr class="hide">
+          <td colspan="12" class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
       </tr>
+
+      <!--Mobile view begin  -->
+
+      <tr  class="show" style="display: none;">         
+          <td colspan="10"  align="center" >
+        <table   width="100%" align="center" >
+
+          <tr>
+            <td colspan="12"  align="center" width="100%"><img width="100%" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mtn-2.png" alt="Mountains" /></td>
+          </tr>
+          <tr>
+            <td colspan="12"  align="center" class="tit-2">Photo of the week</td>  
+          </tr>
+          <tr>  
+              <td colspan="12" align="center" class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+          </tr>
+          <tr>
+            <td colspan="12"  align="center"><img width="100%" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/bass.png" alt="Stretch is the new badass" /></td>
+          </tr>
+          <tr>
+            <td colspan="12"  align="center" class="text-small">ADVERTISMENT</td>
+          </tr>
+        </table>
+     <!-- Mobile view end -->
+      </td>
+       </tr>
       <tr>
         <td colspan="12" >&nbsp;</td>
       </tr>
@@ -131,7 +217,7 @@
         <td colspan="12" align="center">
           <table width="80%" cellpadding="0" cellspacing="40">
             <tr>
-            <td height="1" style="line-height:1px;font-size:1px;background-color:#cecece">&nbsp;</td>
+            <td height="1" style="mso-line-height-rule:exactly; line-height:1px;font-size:1px;background-color:#cecece">&nbsp;</td>
             </tr>
             </table>
           </td>
@@ -139,21 +225,51 @@
       <tr>
           <td colspan="12">&nbsp;</td>
         </tr>
-      <tr>
+      <tr class="hide" >
           <td colspan="4"  align="center"><img width="100%" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mtn-3.png" alt="Mountains" /></td>
           <td colspan="4"  align="center"><img width="100%" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mtn-4.png" alt="Mountains" /></td>
           <td colspan="4"  align="center"><img width="100%" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mtn-5.png" alt="Mountains" /></td>
       </tr>
-      <tr>
+      <tr class="hide" >
         <td colspan="4"  class="tit-2">New Routes</td>
         <td colspan="4"  class="tit-2">SCE TV </td>
         <td colspan="4"  class="tit-2">Winter Camp</td>
       </tr>
-      <tr>
+      <tr class="hide" >
         <td colspan="4" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
         <td colspan="4" class="text">Qui, delectus voluptates fugiat sapiente et  recusandae.</td>
         <td colspan="4" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
       </tr>
+
+      <!-- Mobile view start-->
+      <tr class="show" style="display: none;" >
+        <td colspan="12"  align="center"><img  width="100%" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mtn-3.png" alt="Mountains" /></td>
+      </tr>
+      <tr class="show" style="display: none;" >
+        <td colspan="12"  class="tit-2">New Routes</td>
+      </tr>
+      <tr class="show" style="display: none;" >
+        <td colspan="12" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+      </tr>
+      <tr class="show" style="display: none;" >
+        <td colspan="12"  align="center"><img width="100%" style="margin-top: 35px;" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mtn-4.png" alt="Mountains" /></td>
+      </tr>
+      <tr class="show" style="display: none;" >  
+        <td colspan="12"  class="tit-2">SCE TV </td>
+      </tr>
+      <tr class="show" style="display: none;" >
+        <td colspan="12" class="text">Qui, delectus voluptates fugiat sapiente et  recusandae.</td>
+      </tr>
+      <tr class="show" style="display: none;" >
+          <td colspan="12"  align="center"><img width="100%" style="margin-top: 35px;" src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mtn-5.png" alt="Mountains" /></td>
+       </tr>
+       <tr class="show" style="display: none;" >
+        <td colspan="12"  class="tit-2">Winter Camp</td>
+      </tr>
+      <tr class="show" style="display: none;" >
+        <td colspan="12" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+      </tr>
+      <!-- Mobile view end-->
       <tr>
           <td colspan="12" align="center">
             <table width="80%" cellpadding="0" cellspacing="40">
@@ -165,7 +281,7 @@
       </tr>
       <tr>         
         <td colspan="12"  align="center">
-          <table width="80%" border="1" style="border-style:solid; border-color:#EEEEEE;  border-collapse: collapse;">
+          <table   width="80%" border="1" style="border-style:solid; border-color:#EEEEEE;  border-collapse: collapse;">
             <tr style="background-color: #F5F3F3; ">
               <td class="text" width="50%" style="border-right-style: solid; border-right-color: #EEEEEE;">Event</td>
               <td class="text" width="50%">Date</td>
@@ -180,7 +296,18 @@
       <tr>
         <td colspan="12">&nbsp;</td>
       </tr>     
-      <tr>
+      <tr class="show">
+        <td colspan="12" ><a href="#"  style="text-decoration: none;"><div  class="btn">More Info</div></a></td>
+      </tr>     
+      <tr class="show"  style="margin: 1rem;">
+        <td colspan="12" align="center">
+            <a href="#"><img src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mfg-labs-iconset_2014-07-29_facebook_circle_24_0_000000_none.png" alt="facebook" /></a>
+            <a href="#"><img src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/icomoon-free_2014-12-23_twitter3_24_0_000000_none.png" alt="twitter" /></a>
+            <a href="#"><img src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mfg-labs-iconset_2014-07-29_instagram_circle_24_0_000000_none.png" alt="instagram" /></a>
+            <a href="#"><img src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/font-awesome_4-7-0_google-plus-official_24_0_000000_none.png" alt="google plus" /></a>
+        </td>
+      </tr>
+      <tr class="hide">
         <td colspan="4">&nbsp;</td>
         <td colspan="4" align="center"><a href="#"  style="text-decoration: none;"><div  class="btn">More Info</div></a></td>
         <td colspan="4">&nbsp;</td>        
@@ -188,7 +315,7 @@
       <tr>
           <td colspan="12">&nbsp;</td>
         </tr>
-      <tr>
+      <tr class="hide">
         <td colspan="4">&nbsp;</td>
         <td colspan="4" align="center">
           <a href="#"><img src="https://raw.githubusercontent.com/agusfer88/easyEmail/master/images/mfg-labs-iconset_2014-07-29_facebook_circle_24_0_000000_none.png" alt="facebook" /></a>
@@ -203,26 +330,36 @@
           <td colspan="12" align="center">
             <table width="80%" cellpadding="0" cellspacing="40">
               <tr>
-              <td height="1" style="line-height:1px;font-size:1px;background-color:#cecece">&nbsp;</td>
+              <td height="1" style="mso-line-height-rule:exactly; line-height:1px;font-size:1px;background-color:#cecece">&nbsp;</td>
               </tr>
             </table>
           </td>
       </tr>
-      <tr>
+      <tr class="hide">
         <td  colspan="2">&nbsp;</td>
         <td colspan="8" align="center" class="tit-foot">South Col Experience</td>
         <td  colspan="2">&nbsp;</td>
       </tr>
-      <tr>
+      <tr class="hide">
         <td colspan="2">&nbsp;</td>
         <td colspan="8"  align="center" class="text-small">Lorem ipsum dolor sit, amet consectetur adipisicing.</td>
         <td colspan="2">&nbsp;</td>
       </tr>
-      <tr>
+      <tr class="hide">
         <td colspan="2">&nbsp;</td>
         <td colspan="8" align="center" class="text-small"><a href="#">Contact</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of service</a></td>
         <td colspan="2">&nbsp;</td>
       </tr>
+      <tr class="show">
+          <td colspan="6" align="center" class="tit-foot">South Col Experience</td>
+        </tr>
+        <tr class="show">  
+          <td colspan="6"  align="center" class="text-small">Lorem ipsum dolor sit, amet consectetur adipisicing.</td>
+        </tr>
+        <tr class="show">
+          <td colspan="6" align="center" class="text-small"><a href="#">Contact</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of service</a></td>
+  
+        </tr>
     </table>
         </td>
     </tr></table>
